@@ -1,0 +1,13 @@
+New log file opened at Fri Jun 24 18:27:41 EDT 2016 by 15944@PravarKapoor
+Taking next connection to: 58598
+New client attempting to connect on port: 58599-58598
+  Address = /192.168.161.1:58598
+This client on port 58599 has uuid 19295c68-86fb-4c2c-aff1-e3822e520d74 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-19295c68-86fb-4c2c-aff1-e3822e520d74
+Taking next connection to: 58598
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 15944@PravarKapoor logs at Fri Jun 24 18:31:11 EDT 2016, goodbye.

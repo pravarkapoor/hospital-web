@@ -1,0 +1,69 @@
+@cssIncludes() = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bill.css")">
+}
+
+
+@main(" Bill Form", cssIncludes ) {
+
+<form class="pure-form pure-form-aligned">
+    <fieldset>
+    <legend><h2>Bill Details</h2></legend>
+    <form class="pure-form">
+
+    
+            <label for="bill">Patient ID</label>
+            <input id="billno" type="text" class="pure-input-rounded"placeholder="Patient ID" required>
+            <button type="submit" class="pure-button">Search</button>
+           </form>
+        <br>
+        <br>
+        
+        <div class="pure-control-group">
+            <label for="billno">Bill Number</label>
+            <input id="bill" type="text" placeholder="Bill Number" >
+        </div>
+
+        <div class="pure-control-group">
+            <label for="medch">Medical Charge</label>
+            <input id="medch" type="text">
+        </div>
+        <div class="pure-control-group">
+            <label for="op">Operation Charge</label>
+            <input id="op" type="text">
+        </div>
+        <div class="pure-control-group">
+            <label for="health">Health Card</label>
+            <input id="health" type="text">
+        </div>
+        <div class="pure-control-group">
+            <label for="nurse">Nurse Charge</label>
+            <input id="nurse" type="text">
+        </div>
+        <div class="pure-control-group">
+            <label for="doc">Doctor Charge</label>
+            <input id="doc" type="text">
+        </div>
+        <div class="pure-control-group">
+            <label for="test">Test Charge</label>
+            <input id="test" type="text">
+        </div>
+        <div class="pure-control-group">
+            <label for="noofdays">No. Of Days Charge</label>
+            <input id="noofdays" type="text">
+        </div>
+
+
+        <div class="pure-control-group">
+            <label for="roomch">Room Charge</label>
+            <input id="roomch" type="text">
+        </div>
+
+        <br>
+            <button type="button" class="pure-button pure-button-primary">Update</button>
+            <button type="button" class="pure-button pure-button-primary">All bill Records</button>
+           
+
+        </div>
+    </fieldset>
+</form>
+}

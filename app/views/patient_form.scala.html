@@ -1,0 +1,45 @@
+@cssIncludes() = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/patient.css")">
+    <!-- <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("javascript/patientjs.css")"> -->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+}
+@main("Patient Form", cssIncludes ) {
+
+<form class="standard-form" method="post" action="patient">
+    <h2><p>Patient Details</p> </h2>
+
+    <label>Full Name:
+        <input type="text" class="" name="fullname">
+    </label>
+    <label>Patient ID:
+        <input type="number" name="pid" maxlength="3"></label>
+    <label>Age:
+        <input type="number" name="age" maxlength="3"></label>
+    <label>Gender:
+        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F">Female</label>
+    <label>Contact No.:
+        <input type="text" name="contact"></label>
+    <label>Weight:
+        <input type="number" name="weight"></label>
+    <label>Address:
+        <input type="text" name="address"></label>
+    <label>Problem:
+        <input type="text" name="desc" o></label>
+    <label>Room Number:
+        <input type="text" name="room" o></label>
+
+    <label><input type="button" name="DOP" value="Details of all Patients">
+        <input type="submit" value="Insert" onclick="myfunction()">
+        <input type="button" value="Update">
+        <form action="@routes.HomeController.login()" method="get">
+        <input type="button" value="Back Home">
+        </form>
+
+    </input>
+</form>
+
+}
+
+

@@ -1,0 +1,38 @@
+@cssIncludes() = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/doctor.css")">
+
+}
+
+@main("Doctor Form", cssIncludes ) {
+
+  <form>
+    <fieldset>
+      <legend><h2>Doctor Details</h2></legend><br><br>
+
+      <label for="did">Doctor ID</label>
+      <input type="number" id="did" name="docid" required><br>
+    </label>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="fullname"><br>
+
+    <label for="dept">Department</label>
+    <select id="dept" name="depart">
+      <option value="phy">Physician</option>
+      <option value="end">Endoscopy</option>
+      <option value="car">Cardiology</option>
+      <option value="enc">Endocrinology</option>
+      <option value="neu">Neurosugery</option>
+      <option value="oto">Otolaryngology</option>
+      <option value="gen">General Surgeon</option>
+      <option value="gyn">Gynecologist</option>
+    </select><br>
+
+    <label>
+      <input type="button" value="Insert">
+      <input type="button" value="All Records">
+      
+    </label>
+  </fieldset>
+  </form>
+}
